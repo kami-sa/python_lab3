@@ -1,4 +1,4 @@
-def encrypt_caesar(msg, shift):
+def encrypt_caesar(msg, shift = 3):
     new_msg = ""
     for i in range(len(msg)):
         if msg[i] != ' ':
@@ -8,7 +8,7 @@ def encrypt_caesar(msg, shift):
     return new_msg
 
 
-def decrypt_caesar(msg, shift):
+def decrypt_caesar(msg, shift = 3):
     new_msg = ""
     for i in range(len(msg)):
         if msg[i] != ' ':
@@ -27,8 +27,8 @@ def decrypt_caesar(msg, shift):
 
 msg = "Да здравствует салат Цезарь!"
 shift = 5
-encrypted = encrypt_caesar(msg, shift)
-decrypted = decrypt_caesar(encrypted, shift)
+encrypted = encrypt_caesar(msg)
+decrypted = decrypt_caesar(encrypted)
 print(encrypted)
 print(decrypted)
 
