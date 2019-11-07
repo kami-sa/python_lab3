@@ -18,7 +18,7 @@ def solve(*coefficients):
         c = coefficients[1]
         x.append(-c / b)
     else:
-        x.append('None')
+        x.append(None)
     return x
 
 
