@@ -14,4 +14,5 @@ print_only_new('Шутка номер 1')
 print_only_new('Шутка номер 3')
 print_only_new('Шутка номер 4')
 print_only_new('Шутка номер 2')
-# [print(joke) for joke in a]
+# print()
+# print(*a, sep='\n')
