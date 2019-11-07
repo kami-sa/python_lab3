@@ -9,7 +9,7 @@ def ask_password(str):
 
 flag = False
 count = 0;
-while flag != True and count < 3:
+while flag is not True and count < 3:
     password = input('Введите пароль: ')
     flag = ask_password(password)
     count += 1
