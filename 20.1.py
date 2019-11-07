@@ -1,9 +1,11 @@
+SYMBOLS = {'.', ',', ':', ';', '-'}
+VOWELS = {'а', 'е', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я', 'ё', 'А', 'Е', 'И', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я', 'Ё'}
+
+
 def translate(string):
-    symbols = {'.', ',', ':', ';','-'}
-    vowels = {'а', 'е', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я', 'ё', 'А', 'Е', 'И', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я', 'Ё'}
     new_string = ''
     for i in range(len(string)):
-        if string[i] not in symbols and string[i] not in vowels:
+        if string[i] not in SYMBOLS and string[i] not in VOWELS:
             new_string += string[i]
     return new_string
 
